@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    background-color: #111111;
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    z-index: 999;
+}
+
+.inner-width{
+    max-width: 900px;
+    padding-left: 25px;
+}
+
+.navbar .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 170px;
+    height: 44px;
+    background-image: url(../img/logo_fifa_20.jpg);
+    background-repeat: no-repeat;
+}
+
+.menu-jeux{
+    background: none;
+    width: 5px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+  }
+  
+.menu-jeux div{
+    display: block;
+    height: 5px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 3.5px 0;
+    position: relative;
+}
+
+.navbar-menu a{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.navbar-menu a:hover{
+    color: #29ffc9;
+}
+
+/*CONTENU*/
+.contenu{
+    background-image: url(../img/bg_shop.png);
+    height: 100vh;
+}
+
+.contenu-new{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 130px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.product-card{
+    width: 500px;
+    max-height: 680px;
+    background: #f1f1f1;
+    padding: 40px;
+    margin-top: 55px;
+    text-transform: uppercase;
+}
+
+.product-card h1{
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.product-card p{
+    font-size: 13px;
+    color: #bbbbbb;
+}
+
+.product-pic{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 40px;
+    background-image: url(../img/edition_standard.jpg);
+    width: 200px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    transition: .2s linear;
+}
+
+.product-colors{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.product-colors span{
+    width: 14px;
+    height: 14px;
+    background:  #003087;
+    margin: 0 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    transition: .4s linear;
+}
+
+.product-colors .active::after{
+    content: "";
+    width: 22px;
+    height: 22px;
+    border: 2px solid #888888;
+    position: absolute;
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: -4px;
+    top: -4px;
+}
+
+.product-legend{
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 500;
+    color: #003087;
+    transition: .4s linear;
+}
+
+.product-info{
+    display: flex;
+    align-items: center;
+}
+
+.product-price{
+    color: #003087;
+    font-size: 26px;
+    transition: .4s linear;
+}
+
+.product-button{
+    margin-left: auto;
+    color: #f1f1f1;
+    background-color: #003087;
+    border: 2px solid;
+    padding: 8px 24px;
+    border-radius: 20px;
+    transition: .4s linear;
+}
+
+.product-button:hover{
+    transform: scale(1.06);
+}
+
+.plateform{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.plateform .choix-plateform{
+    color: #bbbbbb;
+    border: 2px solid;
+    padding: 8px 24px;
+    border-radius: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.plateform .choix-plateform.active{
+    color: #003087;
+}
+
+.plateform .choix-plateform:hover{
+    transform: scale(1.06);
+}
+
+.plateform .choix-plateform.playstation:hover{
+    color: #003087;
+}
+
+.plateform .choix-plateform.xbox:hover{
+    color: #52b043;
+}
+
+.plateform .choix-plateform.origin:hover{
+    color: #f9981e;
+}
+
+
+/*TABLEAU*/
+caption{
+    text-transform: uppercase;
+    color: #f1f1f1;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.tab-compare{
+    padding: 20px;
+    border-collapse: separate;
+    border-spacing: 5px;
+    max-width: 1200px;
+}
+
+.en-tete{
+    text-transform: uppercase;
+}
+
+.en-tete th{
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.tab-contenu td{
+    border-bottom: 1px solid #888888;
+    color: #f1f1f1;
+    padding: 5px;
+}
+
+.tab-contenu span{
+    font-weight: 700;
+}
+
+.en-tete th:nth-child(2), .en-tete th:nth-child(3), .en-tete th:nth-child(4){
+    cursor: pointer;
+}
+
+.tab-contenu td:nth-child(2), .tab-contenu td:nth-child(3), .tab-contenu td:nth-child(4){
+    text-align: center;
+}
+
+.color-tete{
+    background-color: #29ffc9;
+}
+
+.color-standard{
+    background-color: #29ffc9;
+    transition: .4s linear;
+}
+
+.color-champions{
+    background-color: #888888;
+    transition: .4s linear;
+}
+
+.color-ultimate{
+    background-color: #888888;
+    transition: .4s linear;
+}
+
+
+/*FOOTER*/
+.credits{
+    text-transform: uppercase;
+    color: #f1f1f1;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.credits span{
+    color: #29ffc9;
+}
